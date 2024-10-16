@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style>
+    #car {
+        width: 200px;
+        position: relative;
+        left: 0;
+        animation-name: letsgo;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-play-state: paused;
+    } #car:active {
+        animation-play-state: running;
+    } button {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background: lightgreen;
+        display: block;
+    } @keyframes letsgo {
+        0% {left: 0;}
+        100% {left: 120vw;}
+    }
+</style>
+</head>
+
+<body>
+    <button onClick="document.getElementById('car').style.animationPlayState='running';">Go!</button>
+    <img id="car" src="car.png" />
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
